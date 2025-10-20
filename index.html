@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PROJECT FAMILY PAYMENT</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      margin: 0;
+      padding: 30px 15px;
+      font-family: 'Share Tech Mono', monospace;
+      background: #000;
+      color: #00ff99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-image: linear-gradient(to bottom, #000000, #001a00);
+      animation: matrixScroll 30s linear infinite;
+    }
+
+    @keyframes matrixScroll {
+      from { background-position: 0 0; }
+      to { background-position: 0 1000px; }
+    }
+
+    h1 {
+      color: #00ffcc;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .thumbnail {
+      width: 160px;
+      height: 160px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00ff99;
+      margin: 20px 0;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: rgba(0, 30, 0, 0.6);
+      border: 1px solid #00ff99;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 0 15px #004d26;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      background: rgba(0, 50, 0, 0.7);
+      transform: scale(1.03);
+    }
+
+    .product-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    .price {
+      font-size: 0.95em;
+      margin: 6px 0;
+      color: #66ffcc;
+    }
+
+    .product-detail {
+      display: none;
+      margin-top: 8px;
+      font-size: 0.85em;
+      color: #99ffcc;
+      white-space: pre-line;
+    }
+
+    button {
+      background-color: #00ff99;
+      color: black;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-family: inherit;
+      box-shadow: 0 0 10px #00ff99;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 80%;
+      border: none;
+      height: 1px;
+      background-color: #004400;
+      margin: 30px 0;
+    }
+
+    .note {
+      color: #ccc;
+      font-size: 0.9em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PROJECT FAMILY</h1>
+  <img src="https://files.catbox.moe/ckgvrm.jpg" class="thumbnail" />
+
+  <!-- QRIS & DUKUNGAN -->
+  <div class="section">
+    <button onclick="window.open('https://files.catbox.moe/zicdqx.png', '_blank')">QRIS</button>
+    <button onclick="event.preventDefault()">SEABANK: 901951956400</button>
+    <button onclick="event.preventDefault()">GOPAY: 085832865045</button>
+  </div>
+  <div class="note">Announcement: <strong>Wajib Screenshot Bukti Pembayaran Anda Dan Berikan Kepada Saya, Jika Saldo Yang Di Berikan Kurang Maka Proces Akan Di Hentikan Jika Saldo Yang Di Berikan Kelebihan Mohon Maaf No Refund</strong></div>
+
+  <hr />
+
+  <!-- Produk Section -->
+  <div class="section">
+
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">PT SlefBot Discord</div>
+      <div class="price">Mulai Rp10.000</div>
+      <div class="product-detail">
+Benefit:
+- Dapatkan Akses SlefBot
+- Dapatkan Akses Premium
+- Dapatkan Role Khusus
+- Dapatkan Diskon Harga
+      </div>
+    </div>
+
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Owner SlefBot</div>
+      <div class="price">Rp50.000</div>
+      <div class="product-detail">
+Benefit:
+- Dapatkan Seluruh commands
+- Dapatkan Aksess memberi premium
+- Dapatkan Role khusus
+- Dapatkan Code & Setup SlefBot
+- Dapatkan Panel Unli 30 Hari
+- Dapatkan Garansi 7D
+      </div>
+    </div>
+
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Script Bot Store Whatsapp</div>
+      <div class="price">Rp20.000</div>
+      <div class="product-detail">
+Bot Store Whatsapp Dengan Fitur Store Seperti Memberikan Premium AddList EditList DeleatList Dan Lain Nya
+      </div>
+    </div>
+
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Build Website Legal & Ilegal</div>
+      <div class="price">Rp50.000</div>
+      <div class="product-detail">
+Website Tersebut Sudah Di Lengkapi Anti Doos Dapat Domain Dan Hosting Juga Pastinya
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDetail(card) {
+      const detail = card.querySelector('.product-detail');
+      detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</htm
